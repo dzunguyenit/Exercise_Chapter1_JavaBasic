@@ -1,10 +1,10 @@
 package section3;
 
-public class Ex2_ContainsString {
+public class Ex02_ContainsString {
 
 	public static void main(String[] args) {
-		String demoString = "Automation Testing Tutorials Online 01";
-		String containsString = "Testing";
+		String demoString = "Ronaldo Versus Messi";
+		String containsString = "Messi";
 
 		boolean result = demoString.contains(containsString);
 		if (result == true)

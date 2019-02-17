@@ -1,6 +1,6 @@
 package section3;
 
-public class ExtractNumberFromString {
+public class Ex07_BonusExtractNumberFromString {
 	public static void main(String[] args) {
 		String text = "Showing 1 to 25 of 50 entries";
 		String[] subString = text.split(" ");
