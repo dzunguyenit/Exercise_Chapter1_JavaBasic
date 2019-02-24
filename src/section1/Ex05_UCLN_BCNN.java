@@ -3,18 +3,19 @@ package section1;
 import java.util.Scanner;
 
 public class Ex05_UCLN_BCNN {
+
 	public static int UCLN(int a, int b) {
-		while (a != b) {
-			if (a > b)
-				a -= b;
-			else
-				b -= a;
-		}
-		return a;
+		int temp = a;
+		while (a % temp != 0 || b % temp != 0)
+			temp--;
+		return temp;
 	}
 
 	public static int BCNN(int a, int b) {
-		return (a * b) / UCLN(a, b);
+		int temp = a;
+		while (temp % a != 0 || temp % b != 0)
+			temp++;
+		return temp;
 	}
 
 	@SuppressWarnings("resource")
